@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" ng-app="SubmitApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Example - example-example33-production</title>
+
+
+    <script type="text/javascript" src="./js/angular.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+
+
+
+
+
+</head>
+<body ng-controller="submitAppCtrl">
+
+<form ng-submit="submit()" ng-controller="submitAppCtrl">
+    Enter something n press submit:
+    <input type="text" name="text" ng-model="text">
+
+    <input type="submit" id="submit" value="button">
+    <pre ng-repeat="item in list">List: {{item}}</pre>
+</form>
+</body>
+</html>
